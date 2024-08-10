@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.app {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1{
+    color: #ef5350;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .pokedex-screen {
+    background-color: #fafafa;
+    border: 8px solid #d32f2f;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5), 0 10px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .pokedex-controls{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pokedex-button {
+    background-color: #1976d2;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, tranform 0.2 ease;
+
+  }
+  
+  .pokedex-button:hover{
+    background-color: #1e88e5;
+    transform: scale(1.1);
+  }
+
+  .pokedex-lights{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .pokedex-light {
+    background: #f44336;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 0 15px rgba(244,67,54, 0.8);
+
+  }
+
+  .pokedex-light.green {
+    background: #4caf50;
+    box-shadow: 0 0 15px rgba(76,175,80,0.8);
+
+  }
+
+  .pokedex-light.yellow {
+    background: #ffeb3b;
+    box-shadow: 0 0 15px rgba(255,235,59,0.8);
+
+  }
+
+
+  
+  
